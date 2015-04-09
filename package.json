@@ -4,19 +4,17 @@
   "description": "",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "watchify -o js/bundle.js -v -d js/index.js"
   },
   "author": "Elliot Lewis",
   "license": "ISC",
   "dependencies": {
     "browserify": "^9.0.7",
     "react": "^0.13.1",
+    "underscore": "^1.8.3",
     "watchify": "^3.1.0"
   },
   "browserify": {
     "transform": "reactify"
-  },
-  "scripts": {
-    "start": "watchify -o js/bundle.js -v -d js/index.js"
   }
 }
